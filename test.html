@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html lang="fr"> 
+<head> 
+	<meta charset = "utf-8" /> 
+	<link rel = "stylesheet" href = "poch.css" />
+	<link href='https://fonts.googleapis.com/css?family=Charmonman' rel='stylesheet'>
+	<title>Poch'lib.com</title> 
+	<link rel = "stylesheet" type = "text/css" href = "fontawesome-free-5.14.0-web/css/all.css">
+</head> 
+	<body> 
+		<main class="main">
+			<header class="header">
+				<img  class="header__image" src = "images/logo.png" alt="logo poch'lib">
+				<h3 class="header__quote">"Enlivrez vous avec Poch'lib"</h3>
+			</header>
+			<h1 class="main__title">Poch'lib</h1>
+			<h2 class="main__sub-title">Nouveau livre</h2> 
+			<button type="button" class="main__button  main__button-principal">Ajouter un livre</button>
+			<section class = "main__search-form">
+				<div>
+					<label for = "book_title">Titre du livre</label>
+					<input type = "text" id= "book_title" name = "book_title" placeholder = "Veuillez saisir le titre de l'oeuvre">
+				</div>
+				<div>
+					<label for = "book_author">Auteur</label>
+					<input type = "text" id=book_author name = "book_author" placeholder="Veuillez saisir le nom de l'auteur">
+				</div>			
+    			<button type="button" class="main__button main__button-search">Rechercher</button> 
+    			<button type="button" class="main__button main__button--red main__button-cancel-search">Annuler</button>
+    		</section>
+			<hr class="main__delimiter"> 
+			<section class="main__form-result">
+				<h3 class="main__form-title">Ma poch'liste</h3>
+				<h4 class ="main__search-result-title">Résultats de la recherche </h4>
+				<p class="main__result-no-book-found"> Aucun livre n'as été trouvé </p>
+				<div class = "main__books-container main__display-book-search"></div>
+				<hr class="main__delimiter main__search-result-delimiter">
+				<h3 class="main__section-book-favorite-title">Ma poch'liste</h3>
+	     		<div class = "main__books-container main__book-add-to-favorite"></div>
+	     		<div class = "main__books-container main__book-saved-to-homepage"></div>
+			</section>
+		</main> 
+		<script src="poch.js"></script>
+	</body> 
+</html>
